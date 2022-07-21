@@ -25,10 +25,10 @@ man or help:
   
   ###  General
 * How to create SSH keys
-* What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
-* How to use while, until and for loops
-* How to use if, else, elif and case condition statements
-* How to use the cut command
+* What is the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`
+* How to use `while`, `until` and `for loops`
+* How to use `if`, `else`, `elif` and `case` condition statements
+* How to use the `cut` command
 * What are files and other comparison operators, and how to use them
 
 ## Requirements
@@ -442,7 +442,7 @@ florence@ubuntu$ ./9-to_file_or_not_to_file
 school file exists
 school file is not empty
 florence@ubuntu$ 
-
+```
 **Repo:**
 
   * GitHub repository: `alx-system_engineering-devops`
@@ -592,6 +592,7 @@ Format: `The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY
 Requirements:
 
   * You must use the `while` loop (`for` and `until` are forbidden)
+
 ```
 florence@ubuntu$ ./101-tell_the_story_of_passwd
 The user root is part of the 0 gang, lives in /root and rides /bin/bash. 0's place is protected by the passcode x, more info about the user here: root
