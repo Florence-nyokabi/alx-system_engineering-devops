@@ -67,6 +67,7 @@ SchoolSchool$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
 $
 ```
+
 **Repo:**
 
   * GitHub repository: `alx-system_engineering-devops`
@@ -98,6 +99,7 @@ Requirements:
 
   * Find the regular expression that will match the above cases
   * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
 **Repo:**
 
   * GitHub repository: `alx-system_engineering-devops`
@@ -113,6 +115,7 @@ Requirements:
 
   * Find the regular expression that will match the above cases
   * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
 **Repo:**
 
   * GitHub repository: `alx-system_engineering-devops`
@@ -129,6 +132,7 @@ Requirements:
   * Find the regular expression that will match the above cases
   * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
   * Your regex should not contain square brackets
+
 **Repo:**
 
   * GitHub repository: `alx-system_engineering-devops`
@@ -216,7 +220,7 @@ sylvain@ubuntu$
   * File: `7-OMG_WHY_ARE_YOU_SHOUTING.rb`
    
 8. Textme
-#advanced
+
 This exercise was prepared for you by [Guillaume Plessis](https://alx-intranet.hbtn.io/rltoken/2Rwwb9pSGKXSp3b3BcqkAw), VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project [on Twitter](https://alx-intranet.hbtn.io/rltoken/Vz-iLl3_Of797s9TsjCxJQ).
 
 For this task, you’ll be taking over Guillaume’s responsibilities: one afternoon, a TextMe VoIP Engineer comes to you and explains she wants to run some statistics on the TextMe app text messages transactions.
