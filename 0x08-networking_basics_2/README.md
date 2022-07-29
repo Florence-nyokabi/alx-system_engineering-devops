@@ -11,7 +11,8 @@
   * [What is 0.0.0.0](https://alx-intranet.hbtn.io/rltoken/fUb9IpnxrNaddMljzwbhJQ)
   * [What is the hosts file](https://alx-intranet.hbtn.io/rltoken/4_MBpFTulKliFM69jCPzOQ)
   * [Netcat examples](https://alx-intranet.hbtn.io/rltoken/OR0lOEwAw9I1Rj4aGp1Ljg)
-man or help:
+
+**man or help:**
 
 `ifconfig`
 `telnet`
