@@ -15,11 +15,8 @@
 **man or help:**
 
  * `ifconfig`
-
  * `telnet`
-
  * `nc`
-
  * `cut`
 
 # Learning Objectives
