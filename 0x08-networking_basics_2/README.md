@@ -97,7 +97,7 @@ If you’re running this script on a machine that you’ll continue to use, be s
 **Repo:**
  * GitHub repository: `alx-system_engineering-devops`
  * Directory: `0x08-networking_basics_2`
- * File: `0-change_your_home_IP
+ * File: `0-change_your_home_IP`
  
  # 1. Show attached IPs
 
