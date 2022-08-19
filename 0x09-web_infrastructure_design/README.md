@@ -32,11 +32,11 @@ On a whiteboard, design a one server web infrastructure that hosts the website t
    * 1 application server
    * 1 application files (your code base)
    * 1 database (MySQL)
-   * 1 domain name foobar.com configured with a www record that points to your server IP 8.8.8.8
+   * 1 domain name `foobar.com` configured with a `www` record that points to your server IP `8.8.8.8`
  * You must be able to explain some specifics about this infrastructure:
    * What is a server
    * What is the role of the domain name
-   * What type of DNS record www is in www.foobar.com
+   * What type of DNS record `www` is in `www.foobar.com`
    * What is the role of the web server
    * What is the role of the application server
    * What is the role of the database
