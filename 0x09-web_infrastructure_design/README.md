@@ -86,7 +86,7 @@ Please, remember that everything must be written in English to further your tech
  * Directory: `0x09-web_infrastructure_design`
  * File: `1-distributed_web_infrastructure`
 
-# 2. Secured and monitored web infrastructure
+## 2. Secured and monitored web infrastructure
 
 On a whiteboard, design a three server web infrastructure that hosts the website `www.foobar.com`, it must be secured, serve encrypted traffic, and be monitored.
 
@@ -117,11 +117,13 @@ Please, remember that everything must be written in English to further your tech
  * File: `2-secured_and_monitored_web_infrastructure`
  
  
-# 3. Scale up
+## 3. Scale up
 
 Readme
 
  * [Application server vs web server](https://alx-intranet.hbtn.io/rltoken/toFi_SdFHyi2MaELB8ekqw)
+
+
 Requirements:
 
  * You must add:
