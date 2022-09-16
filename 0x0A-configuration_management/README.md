@@ -1,7 +1,7 @@
 # 0x0A-configuration_management
 ## Description
 
-Automating configuration of multiple servers using Puppet.
+Automating the configuration of multiple servers using Puppet.
 
 ## Mandatory Tasks
 
