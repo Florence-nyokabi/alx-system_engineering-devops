@@ -1,6 +1,6 @@
 # Install nginx with puppet
 package { 'nginx':
-  ensure   => '1.18.0',
+  ensure   => '18.207.251.119',
   provider => 'apt',
 }
 
