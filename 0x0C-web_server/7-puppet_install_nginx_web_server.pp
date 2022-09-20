@@ -1,23 +1,59 @@
-# Install nginx with puppet
-package { 'nginx':
-  ensure   => '18.207.251.119',
-  provider => 'apt',
+# Nginx server setup and configuration
+exec { 'Update the apt repository':
+  command => 'apt update',
+  path    => '/usr/bin:/usr/sbin:/bin'
 }
 
-file { 'Hello World':
-  path    => '/var/www/html/index.nginx-debian.html',
-  content => 'Hello World',
+package { 'The web server':
+  ensure          => installed,
+  name            => 'nginx',
+  provider        => 'apt',
+  install_options => ['-y']
 }
 
-file_line { 'Hello World':
-  path  => '/etc/nginx/sites-available/default',
-  after => 'server_name _;',
-  line  => '\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
+file { 'The home page':
+  ensure  => file,
+  path    => '/var/www/html/index.html',
+  mode    => '0744',
+  owner   => 'www-data',
+  content => "Hello World!\n"
 }
 
-exec { 'service':
-  command  => 'service nginx start',
-  provider => 'shell',
-  user     => 'root',
-  path     => '/usr/sbin/service',
+file { 'The 404 page':
+  ensure  => file,
+  path    => '/var/www/error/404.html',
+  mode    => '0744',
+  owner   => 'www-data',
+  content => "Ceci n'est pas une page\n"
+}
+
+file { 'Nginx server config file':
+  ensure  => file,
+  path    => '/etc/nginx/sites-enabled/default',
+  mode    => '0744',
+  owner   => 'www-data',
+  content =>
+"server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+	location / {
+		try_files \$uri \$uri/ =404;
+	}
+	if (\$request_filename ~ redirect_me){
+		rewrite ^ https://sketchfab.com/bluepeno/models permanent;
+	}
+	error_page 404 /404.html;
+	location = /404.html {
+		root /var/www/error/;
+		internal;
+	}
+}"
+}
+
+exec { 'Start the server':
+  command => 'service nginx restart',
+  path    => '/usr/bin:/usr/sbin:/bin'
 }
